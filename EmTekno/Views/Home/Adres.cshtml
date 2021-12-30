@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Adres";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div id="sidebar" class="span3">
+        <div class="well well-small">
+            <ul class="nav nav-list">
+                @Html.Action("_CategoryList", "Category")
+                <li style="border:0"> &nbsp;</li>
+                @Html.Action("Summary", "Cart")
+            </ul>
+        </div>
+
+
+        @Html.Action("_FeaturedProductList", "Home")
+
+    </div>
+    <div class="span9">
+        <ul class="breadcrumb">
+            <li><a href="~/Home/Index/">Anasayfa</a> <span class="divider">/</span></li>
+            <li><a href="~/Home/Product/">İletişim</a> <span class="divider">/</span></li>
+            <li class="active">Adres Bilgileri</li>
+        </ul>
+        <div class="well well-small">
+            <h2>Adres</h2>
+            <h4><b style="color:darkred;">Adres :</b> Bahçelerüstü Mah. 46.Sok 11/5 Mamak/Ankara</h4>
+            <h4><b style="color:darkred;">Tel :</b> 0312-222-3322</h4>
+            <h4><b style="color:darkred;">E-Mail :</b> emteknoloji@gmail.com</h4>
+            <hr class="softn clr">
+
+
+
+        </div>
+        <div class="well well-small">
+            <h2>Harita <i style="font-size:15px; color:darkred;">(Bize Ulaşmanın Kolay Yolu)</i></h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.930328732858!2d32.8957922011614!3d39.94294806704407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34e00254ade83%3A0x663fd11d9c8ba47a!2zQXlZxLFsZMSxeiBQYXJrxLE!5e0!3m2!1str!2str!4v1622218394480!5m2!1str!2str" width="680" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+        </div>
+    </div>
+</div>
+
